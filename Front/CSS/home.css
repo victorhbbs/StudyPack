@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* GERAL DIVISÃO */
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    box-sizing: 0;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* PRIMEIRO DIVISÃO */
+
+.first-content{
+    width: 95%;
+    padding-left: 5%;
+    padding-top: 4%;
+    min-height: 100vh;
+    max-height: 120vh;
+    background-color: #FFFFFF;
+}
+
+.logo-1{
+    width: 10%;
+    height: auto;
+}
+
+.big-title{
+    font-size: 80px;
+    color: #FA5F1A;
+}
+
+.legend-big-title{
+    font-size: 35px;
+    margin-top: 30px;
+    color: #FA5F1A;
+}
+
+/* SEGUNDA DIVISÃO */
+
+.second-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 120vh;
+    
+    gap: clamp(24px, 4vw, 96px);
+    padding: min(8vh, 120px) clamp(24px, 5vw, 40px);
+    background-color: #FA5F1A;
+}
+
+.left-container,
+.right-container{
+    flex: 1 1 0;
+    max-width: clamp(380px, 36vw, 820px);
+}
+
+.pessoas{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform: translateX(15%);
+}
+
+.right-container{
+    flex: 0 1 auto;
+    max-width: 560px;
+    width: 100%;
+    min-height: 70vh;
+    max-height: 90vh;
+    color: #FFFFFF;
+    transform: translateX(15%);
+}
+
+.middle-title{
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(28px, 3.5vw, 64px);
+    line-height: 1.15;
+    letter-spacing: .02em;
+}
+
+.second-desc{
+    margin-top: 3%;
+    font-size: clamp(14px, 1.1vw, 22px);
+    line-height: 1.6;
+    max-width: 60xh;
+}
+
+@media (min-width: 1800px){
+  .second-content{ gap: min(8vw, 160px); }
+  .left-container, .right-container{ max-width: 900px; }
+}
+
+/* TERCEIRA DIVISÃO */
+
+.third-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 120vh;
+    
+    gap: clamp(24px, 4vw, 96px);
+    padding: min(8vh, 120px) clamp(24px, 5vw, 40px);
+    padding-top: 5%;
+    background-color: #FFFFFF;
+}
+
+.center-end{
+    align-items: center;
+    display: inline-block;
+    width: 350px;
+}
+
+.logo-2{
+    width: 100%;
+    height: auto;
+}
+
+.left-gray-container,
+.right-gray-container{
+    padding: 2%;
+    background-color: #BBCCD1;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+.middle-gray-container{
+    padding: 10%;
+    background-color: #BBCCD1;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+.orange-title{
+    color: #FA5F1A;
+    margin-bottom: 4%;
+}
+
+.third-desc{
+    font-weight: 500;
+    font-size: 20px;
+}
